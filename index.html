@@ -32,9 +32,9 @@
                 <img src="img/modal.jpg" class="img-thumbnail rounded mx-auto d-block" alt="bmodal">
               </div>
             </div>
-            <div class="modal-footer">
+            <div id="box" class="modal-footer">
               <a onclick="togglePlay()">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Buka Undangan</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="togglePlay()">Buka Undangan</button>
               </a> 
             </div>
           </div>
@@ -127,7 +127,7 @@
             </p>
           </div>
           <div class="col-md-5">
-           <h4 class="text-center">Resepsi</h4>
+            <h4 class="text-center">Resepsi</h4>
             <h5 class="text-center">Sabtu, 05 Juni 2021</h5>
             <p class="text-center">
             
@@ -243,8 +243,7 @@
     <footer class="text-center" style="background-color: #f79c9c;">
       <p >created by <a href="">loadik project</a>
       </p>
-    
-     <audio src="audio/th.mp3"  autoplay id="playAudio"></audio> 
+      <audio src="audio/th.mp3"  autoplay id="playAudio"></audio> 
     </footer>
     <!-- end footer -->
     
@@ -261,15 +260,7 @@
         
       });
     </script>
-    <script>
-      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if (!isChrome){
-          $('#iframeAudio').remove()
-          }
-        else {
-          $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-           }
-    </script>
+    
     <script type="text/javascript">
       var myAudio = document.getElementById("playAudio");
       var isPlaying = false;

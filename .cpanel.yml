@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kemuning/baralek/
-    - /bin/cp -R /home/kemuning/repositories/dika_projectnewbie2  $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R audio $DEPLOYPATH
